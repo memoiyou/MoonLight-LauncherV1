@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonLight Launcher</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <img src="img/th.jpg" alt="MoonLight Launcher Logo"> <h1>MoonLight Launcher</h1>
+      <div id="user-info">
+        <span>@MoonLight</span>
+        
+      </div>
+    </header>
+    <main class="main">
+      <section id="news">
+        <h2>Dernières News :</h2>
+        <div id="news-content">Aucune nouvelle pour le moment.</div>
+      </section>
+      <div class="button-container">
+        <button id="launch-button">JOUER</button>
+        <button id="settings-button"><i class="fas fa-cog"></i> Paramètres</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div id="support">
+        <a href="https://discord.com/Moolight" target="_blank"><i class="fab fa-discord"></i> Support Discord</a>
+        <a href="https://MooLight.com/support" target="_blank"><i class="fas fa-globe"></i> Support Web</a>
+      </div>
+    </footer>
+
+    <div id="settings-modal" class="modal">
+      <div id="settings-content">
+        <span id="close-settings">&times;</span>
+        <h2>Paramètres Minecraft</h2>
+        <div class="ram-allocation">
+          <label for="ram-amount">RAM allouée :</label>
+          <div class="ram-slider-container">
+            <input type="range" id="ram-amount" min="1024" max="32768" step="512" value="2048">
+            <span id="ram-amount-value">[RAM_TOTAL] Go</span>
+          </div>
+          <div class="ram-info">
+            <p>RAM minimum recommandée : 2 Go</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <script src="app.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

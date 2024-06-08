@@ -1,0 +1,209 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url("img/image.png"); 
+  background-size: cover;
+  background-position: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 80%; 
+  max-width: 600px; 
+  height: auto; 
+  background: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #fff; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#user-info {
+  text-align: right;
+}
+
+#user-info span {
+  display: block;
+  font-size: 14px; 
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#news {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+#news h2 {
+  margin: 0 0 10px;
+  font-size: 18px; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: #007BFF; 
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px; 
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px; 
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.footer {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+#support a {
+  color: #fff; 
+  text-decoration: none; 
+  margin-right: 10px;
+}
+
+#support a:hover {
+  color: #ccc; 
+}
+/* Pour les settings ram ect ...*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#settings-content {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+}
+
+.ram-allocation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.ram-slider-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#ram-amount {
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#ram-amount::-moz-range-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #4CAF50;
+  border-radius: 50%;
+}
+
+#ram-amount::-moz-range-thumb:hover {
+  background: #3e8e41;
+}
+
+#ram-amount::-moz-range-track {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+#ram-amount::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px;
+}
+
+#ram-amount::-ms-fill-lower {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+#ram-amount::-ms-fill-upper {
+  background: #4CAF50;
+  border-radius: 10px;
+}
+
+#ram-amount-value {
+  font-weight: bold;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#close-settings {
+  position: absolute; 
+  top: 10px; 
+  left: 15px; 
+  font-size: 20px; 
+  color: #999; 
+  cursor: pointer; 
+  transition: color 0.3s ease; 
+}
+
+#close-settings:hover {
+  color: #611515; 
+}
+
